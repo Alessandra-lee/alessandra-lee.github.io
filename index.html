@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visual Novel</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="title-screen">
+        <h1 id="game-title"></h1>
+        <div id="name-input-container">
+          <label for="player-name">Enter your name!</label>
+          <input type="text" id="player-name" maxlength="10" placeholder="Your name">
+          <button id="start-game-button">START GAME!</button>
+         <audio id="background-audio" autoplay loop>
+    <source src="Assets/sounds/background-music.mp3" type="audio/mp3">
+</audio>
+        </div>
+      </div>
+      
+  <div id="game-container">
+    <img id="background" src="Assets/Images/computer-767781-1280-10.png" alt="Background">
+    <img id="sprite" src="Assets/Images/imda-k-8-10.png" alt="Character Sprite">
+    
+    <!-- Character Name Box -->
+    <div id="character-name-box">
+      <span id="character-name">K8</span>
+    </div>
+    
+    <div id="dialogue-box">
+    </div>    
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!-- background-music.html -->
+<audio id="background-music" autoplay loop>
+    <source src="Assets/sounds/title-screen.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+</audio>
+<script>
+    // When the page is loaded, make sure the music starts and is looped.
+    window.onload = function() {
+        if (localStorage.getItem("musicPlaying") !== "true") {
+            // If music was not playing, set it to play and store it in localStorage
+            localStorage.setItem("musicPlaying", "true");
+        }
+    }
+</script>
